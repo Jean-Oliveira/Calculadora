@@ -1,0 +1,104 @@
+:root {
+    --cor-operador: #ee9d08;
+    --cor-efeito-op: #8d5f10;
+    --cor-fonte-branco: #ffffff;
+    --cor-txt-resultado: #000000;
+    --cor-operador-outros: #d3cfc6;
+    --cor-operador-outros-efeito: #83807b;
+    --cor-botoes-numericos: #565758;
+    --cor-fundo: linear-gradient(45deg,#000000, #8d5f10);
+    --cor-efeito-botao: #36383a;
+    --cor-fundo-calculadora: rgba(0, 0, 0, 0.6);
+    
+    /* fonte */
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --fonte-tamanho: 20px;
+    --tamanho-padrao: 20px;
+
+}
+body{
+    background: var(--cor-fundo);
+}
+
+.tela {
+    background-color: var(--cor-fonte-branco);
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 0 0 0.3em;
+    text-align: end;
+    height: var(--tamanho-padrao);
+    transform: translate();
+}
+
+.calculadora {
+    text-align: center;
+    background-color: var(--cor-fundo-calculadora);
+    padding: var(--tamanho-padrao);
+    position: absolute;
+    border: none;
+    border-radius: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--fonte-principal);
+}
+
+h1 {
+    font-size: 25px;
+    color: var(--cor-fonte-branco);
+}
+
+.op {
+    background-color: var(--cor-operador);
+    color: var(--cor-fonte-branco);
+    font-size: var(--fonte-tamanho);
+}
+
+.op:hover {
+    background-color: var(--cor-efeito-op);
+}
+
+.op-outros {
+    background-color: var(--cor-operador-outros);
+    font-size: var(--fonte-tamanho);
+}
+
+.op-outros:hover {
+    background-color: var(--cor-operador-outros-efeito);
+}
+
+.botao {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 0.05em;
+    border-radius: 10em;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+
+.num:hover {
+    background-color: var(--cor-efeito-botao);
+}
+
+.botao-zero {
+    width: 106px;
+    height: 50px;
+    margin: 0.05em;
+    border-radius: 10em;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+}
+
+.botao-zero:hover {
+    background-color: var(--cor-efeito-botao);
+}
+
+.fonte {
+    background-color: var(--cor-botoes-numericos);
+    color: var(--cor-fonte-branco);
+    font-weight: bolder;
+    font-size: var(--fonte-tamanho);
+}
